@@ -1,0 +1,21 @@
+<aura:component implements="flexipage:availableForAllPageTypes" access="global" description="mycomponents">
+    <aura:attribute name="IsLibraryCarCreated" type="Boolean" default="false"/>
+    <aura:attribute name="FirstName" type="String"/>
+    <aura:attribute name="LastName" type="String"/>
+    <aura:attribute name="Branch" type="String"/>
+    <lightning:card footer="Card Footer" title="Library info">
+       <div>
+        <div class="slds-p-around_medium lgc-bg">
+            <lightning:input value="{!v.FirstName}" type="text" label="Enter First Name" placeholder="First Name..."/>
+        </div>
+        <div class="slds-p-around_medium lgc-bg">
+            <lightning:input value="{!v.LastName}" type="text" label="Enter Last Name" placeholder="Last Name..." />
+        </div>
+        <div class="slds-p-around_medium lgc-bg">
+            <lightning:input value="{!v.BranchName}" type="text" label="Enter Branch Name" placeholder="Branch Name..."/>
+        </div>
+       </div>
+       <lightning:button variant="brand" label=" Cancel" title="Brand action" onclick="{! c.handleClick }" />
+       <lightning:button variant="brand" label=" Save" title="Brand action" onclick="{! c.handleClick }" />
+    </lightning:card>
+</aura:component>
