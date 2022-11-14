@@ -1,0 +1,25 @@
+<template>
+   <lightning-card  variant="Narrow"  title="Hello" icon-name="standard:account">
+            <lightning-button-icon  icon-name="utility:down" variant="border-filled" alternative-text="Show More" slot="actions"></lightning-button-icon>
+            
+            <p class="slds-p-horizontal_small">Hello {name}</p>
+            
+            <p slot="footer">Card Footer</p>
+        </lightning-card> 
+
+        <lightning-card  variant="Narrow"  title="Hello" icon-name="standard:account1">
+            <div class="slds-p-around_medium lgc-bg">
+                <lightning-input 
+                type="text"
+                name="role" 
+                label="Enter the role"
+                value={role}
+                 onchange={ChangeHandler}>
+                </lightning-input>
+            </div>
+            <div class="slds-p-around_medium lgc-bg">
+                <p>My role is {role}</p>
+            </div>
+    
+        </lightning-card> 
+</template>

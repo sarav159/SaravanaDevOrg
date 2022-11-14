@@ -51,4 +51,3 @@ public class CynosureGenericUtility {
         return null;
     }
 }
-

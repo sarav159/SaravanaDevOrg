@@ -12,9 +12,16 @@ public with sharing class MapClass {
         studentMap.put(93, new List<String>{'ClassX','ClassY'});
         studentMap.put(98, new List<String>{'ClassX','ClassY'});
         
-       
-       
-        for(Integer rollnumber : studentMap.keyset()){
+        system.debug('studentMap=='+studentMap);
+        
+        
+        system.debug('studentMap=='+studentMap.keySet());
+        
+        
+        system.debug('studentMap=='+studentMap.values());        
+        
+               
+        for(Integer rollnumber : studentMap.keySet()){
             
             if(math.mod(rollnumber,2)==0){
                 studentMap.put(rollnumber, new List<String>{'ClassY','ClassX','ClassZ'});

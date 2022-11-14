@@ -1,4 +1,3 @@
-
 public with sharing class SetOperationsUtility {
     public static Set<Integer> getUnion(Set<Integer> firstSet, Set<Integer> secondSet) {
         Set<Integer> result = new Set<Integer>();

@@ -1,4 +1,3 @@
-
 public with sharing class ListOperationsUtility {
     public static List<Integer> getUnion(List<Integer> firstList, List<Integer> secondList) {
         List<Integer> result = new List<Integer>();

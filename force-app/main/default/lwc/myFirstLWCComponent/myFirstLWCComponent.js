@@ -1,9 +1,10 @@
-import { LightningElement, track } from 'lwc';
+import { LightningElement} from 'lwc';
 
 export default class MyFirstLWCComponent extends LightningElement {
-    @track Title;
+    
+     title = 'salesforce developer'
     changeHandler(event){
-        this.Title = event.target.value;
+        this.title = event.target.value;
     }
    
 }

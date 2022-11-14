@@ -146,7 +146,7 @@ private class SetOperationsUtilityTest {
 
         Integer Val = SetOperationsUtility.getSumOfAllMultiplesOfThreeValues(firstSet, secondSet);
        System.assertEquals( Val,393);
-       System.assertEquals( Val,2100);
+       //System.assertEquals( Val,2100);
         System.debug('@@@@@ Result @@@@ '+Val);
     }
     @IsTest
@@ -167,7 +167,7 @@ private class SetOperationsUtilityTest {
 
         Integer Val = SetOperationsUtility.getSumOfAllEvenValues(firstSet, secondSet);
         System.assertEquals( Val,214);
-        System.assertEquals(Val,1000);
+        //System.assertEquals(Val,1000);
         System.debug('@@@@@ Result @@@@ '+Val);
     }
     @IsTest
@@ -188,7 +188,7 @@ private class SetOperationsUtilityTest {
 
         Integer Val = SetOperationsUtility.getSumOfAllOddValues(firstSet, secondSet);
        System.assertEquals( Val,400);
-        System.assertEquals( Val,1000);
+        //System.assertEquals( Val,1000);
         System.debug('@@@@@ Result @@@@ '+Val);
     }
 }

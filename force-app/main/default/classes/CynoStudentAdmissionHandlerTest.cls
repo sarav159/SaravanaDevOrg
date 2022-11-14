@@ -420,11 +420,56 @@ private class CynoStudentAdmissionHandlerTest {
   
         
     }
-   }
+    testMethod static void testremoveListOfStudentsWhoHaveNotGivenPermanentaddress() {
+        CynoStudentAdmissionHandler handler = new CynoStudentAdmissionHandler();
+  
+        CynoStudent student1 = new CynoStudent();
+        CynoStudent student2 = new CynoStudent();
+  
+        CynoAddress stud1CurrentAddress=new CynoAddress('karungal','marthandam','nagercoil','629178','TN','India');
+       
+        CynoAddress stud2CurrentAddress=new CynoAddress('karungal','marthandam','nagercoil','629178','TN','India');
+        CynoAddress stud2PermenantAddress=new CynoAddress('karungal','marthandam','nagercoil','629178','TN','India');
+  
+     
+  
+        student1.currentAddress = stud1CurrentAddress;
+        student2.currentAddress = stud2CurrentAddress;
+       // student1.permanentAddress = stud1PermenantAddress;
+        student2.permanentAddress = stud2PermenantAddress;
+  
+        handler.removeListOfStudentsWhoHaveNotGivenPermanentaddress(student1);
+        handler.removeListOfStudentsWhoHaveNotGivenPermanentaddress(student2);
+  
+  
+        System.assertEquals(1, handler.studentsSet.size());
+  
         
-              
-          
-
-
-
-      
+    }
+    testMethod static void testremoveListOfStudentsWhoHaveNotGivenCurrentaddress() {
+        CynoStudentAdmissionHandler handler = new CynoStudentAdmissionHandler();
+  
+        CynoStudent student1 = new CynoStudent();
+        CynoStudent student2 = new CynoStudent();
+  
+        CynoAddress stud1CurrentAddress=new CynoAddress('karungal','marthandam','nagercoil','629178','TN','India');
+        CynoAddress stud1PermenantAddress=new CynoAddress('karungal','marthandam','nagercoil','629178','TN','India');
+    
+        CynoAddress stud2PermenantAddress=new CynoAddress('karungal','marthandam','nagercoil','629178','TN','India');
+  
+     
+  
+        student1.currentAddress = stud1CurrentAddress;
+        //student2.currentAddress = stud2CurrentAddress;
+        student1.permanentAddress = stud1PermenantAddress;
+        student2.permanentAddress = stud2PermenantAddress;
+  
+        handler.removeListOfStudentsWhoHaveNotGivenCurrentaddress(student1);
+        handler.removeListOfStudentsWhoHaveNotGivenCurrentaddress(student2);
+  
+  
+        System.assertEquals(1, handler.studentsSet.size());
+  
+        
+    }
+   }

@@ -19,21 +19,21 @@ public class StudentDemoMap {
         stud2.Roll_Number__c = 2;
         stud2.Fathers_Name__c = 'Dady2';
         stud2.Name = 'Son2';
-        stud2.Physics__c = 70;
+        stud2.Physics__c = 73;
         stud2.Tamil__c = 80;
-        stud2.Chemistry__c = 90;
+        stud2.Chemistry__c = 98;
         stud2.English__c = 60;
-        stud2.Mathematics__c = 50;
+        stud2.Mathematics__c = 55;
         
         Student__c stud3 = new Student__c();
         stud3.Age__c =27;
         stud3.Roll_Number__c = 3;
         stud3.Fathers_Name__c = 'Dady3';
         stud3.Name = 'Son3';
-        stud3.Physics__c = 70;
-        stud3.Tamil__c = 80;
+        stud3.Physics__c = 74;
+        stud3.Tamil__c = 86;
         stud3.Chemistry__c = 90;
-        stud3.English__c = 60;
+        stud3.English__c = 67;
         stud3.Mathematics__c = 50;
         
         Student__c stud4 = new Student__c();
@@ -42,10 +42,10 @@ public class StudentDemoMap {
         stud4.Fathers_Name__c = 'Dady4';
         stud4.Name = 'Son4';
         stud4.Physics__c = 70;
-        stud4.Tamil__c = 80;
+        stud4.Tamil__c = 81;
         stud4.Chemistry__c = 90;
-        stud4.English__c = 60;
-        stud4.Mathematics__c = 50;
+        stud4.English__c = 64;
+        stud4.Mathematics__c = 51;
         
         studentsMap.put(1,stud1);
         studentsMap.put(2,stud2);
@@ -98,6 +98,3 @@ public class StudentDemoMap {
          System.debug('total Mark==>'+ map3);
     }
 }
-
-
-

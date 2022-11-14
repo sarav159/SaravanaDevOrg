@@ -168,6 +168,17 @@ public List<CynoStudent> getAddressOfBothCurrentAndPermenantAddressSame()
         }
         return studentsList;
 }
+public void removeListOfStudentsWhoHaveNotGivenPermanentaddress(CynoStudent student) {
+    if(student.permanentAddress == NULL){
+        studentsSet.remove(student);
+    }
+}
+public void removeListOfStudentsWhoHaveNotGivenCurrentaddress(CynoStudent student) {
+    if(student.currentAddress == NULL){
+        studentsSet.remove(student);
+    }
+}
+   
     public void addStudent(CynoStudent student) {
 
       this.studentsSet.add(student);
